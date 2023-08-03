@@ -1,30 +1,44 @@
-# Tamatron - Cloud Simulation
+# Asteroid Cloud Simulation
 
-This is a p5.js project that simulates a cloud-like structure with points that attract, repel, and orbit each other. The configuration for the cloud and points is specified in the `config.json` file. The cloud is attracted to the center of the canvas, while the points are attracted and repelled by the center of the cloud.
+This repository contains a simple simulation of an asteroid cloud orbiting around a center point, represented as a "cloud" on the canvas. The simulation uses the p5.js library to handle graphics and animation.
+
+## How to Run
+
+To run the simulation, you will need a local development environment set up with Node.js. Follow these steps:
+
+1. Clone this repository to your local machine using `git clone https://github.com/your-username/asteroid-cloud-simulation.git`.
+2. Navigate to the project folder using `cd asteroid-cloud-simulation`.
+3. Install the required dependencies by running `npm install`.
+4. Start the local server by running `npm start`.
+5. Open your web browser and go to `http://localhost:3000` to view the simulation.
+
+The simulation displays a cloud of asteroids orbiting around a center point, with each asteroid experiencing attraction and repulsion forces that create an interesting visual effect.
 
 ## Configuration
 
-The `config.json` file contains the following properties:
+The simulation can be customized using a JSON configuration file. The configuration file (`config.json`) allows you to tweak various parameters, such as the size of the cloud, attraction and repulsion strengths, maximum speed, and more. Feel free to experiment with these values to create different patterns and visual effects.
 
-- `resolution`: The resolution of the cloud grid.
-- `startColor`: The starting color for the cloud.
-- `endColor`: The ending color for the cloud.
-- `steps`: The number of steps for the color transition.
-- `maxTrailLength`: The maximum length of the trail behind the cloud.
-- `cloudSize`: The maximum number of points in the cloud.
-- `cloudName`: The name of the cloud displayed on the canvas.
-- `dotInterval`: The time interval in seconds for adding new points to the cloud.
-- `attractionStrength`: The strength of the attraction force between points and the cloud center.
-- `repulsionStrength`: The strength of the repulsion force between points to avoid stacking.
-- `damping`: The damping factor to slow down the cloud movement.
-- `pointSize`: The static size of the points in the cloud.
+## Controls
 
-## Usage
+- Left-click and drag to move the cloud center and observe how the asteroids interact with it.
+- The cloud name is displayed above the cloud center.
 
-1. Clone this repository.
-2. Modify the `config.json` file to customize the cloud simulation.
-3. Open `index.html` in your web browser to view the simulation.
+## Planet and Craters
 
-## Licensing
+In addition to the asteroid cloud, the simulation includes a planet-like dot at the cloud's center. The color of the dot is randomly generated, and static craters are placed around the cloud center. The planet-like dot rotates at a configured speed.
 
-This project is licensed under the MIT License. See [LICENSE](LICENSE) for more details.
+## Issues
+
+If you encounter any issues while running the simulation or have any suggestions for improvement, please feel free to create an issue in this repository. Your feedback is valuable and will help us enhance the simulation further.
+
+## Acknowledgments
+
+The asteroid cloud simulation is built using p5.js, a JavaScript library for creative coding and visualization.
+
+Special thanks to [OpenAI](https://openai.com) for their GPT-3.5 language model, which helped in the debugging process.
+
+---
+
+Have fun exploring the mesmerizing world of the asteroid cloud simulation! If you have any questions or need assistance, please don't hesitate to reach out.
+
+Happy coding! 🚀
