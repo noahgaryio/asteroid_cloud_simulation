@@ -1,0 +1,25 @@
+{
+    "resolution": 400,
+    "startColor": {
+      "r": 255,
+      "g": 0,
+      "b": 0
+    },
+    "endColor": {
+      "r": 0,
+      "g": 255,
+      "b": 0
+    },
+    "steps": 100,
+    "dotInterval": 1,
+    "cloudSize": 200,
+    "pointSize": 5,
+    "attractionStrength": 0.1,
+    "repulsionStrength": 0.5,
+    "damping": -0.01,
+    "maxSpeed": 10,
+    "xOffIncrement": 0.01,
+    "yOffIncrement": 0.01,
+    "cloudName": "My Cloud"
+  }
+  
